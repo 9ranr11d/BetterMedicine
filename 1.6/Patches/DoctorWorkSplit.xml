@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- 수술 -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/WorkGiverDef[defName="DoBillsMedicalHumanOperation"]/workType</xpath>
+    <value><workType>DWS_Surgery</workType></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/WorkGiverDef[defName="DoBillsMedicalAnimalOperation"]/workType</xpath>
+    <value><workType>DWS_Surgery</workType></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/WorkGiverDef[defName="TakeToBedToOperate"]/workType</xpath>
+    <value><workType>DWS_Surgery</workType></value>
+  </Operation>
+
+  <!-- 간호 -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/WorkGiverDef[defName="DoctorFeedHumanlikes"]/workType</xpath>
+    <value><workType>DWS_PatientCare</workType></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/WorkGiverDef[defName="DoctorFeedAnimals"]/workType</xpath>
+    <value><workType>DWS_PatientCare</workType></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/WorkGiverDef[defName="VisitSickPawn"]/workType</xpath>
+    <value><workType>DWS_PatientCare</workType></value>
+  </Operation>
+
+  <!-- 생명공학: 헤모젠 투여는 환자 돌봄 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/WorkGiverDef[defName="FeedHemogen"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/WorkGiverDef[defName="FeedHemogen"]/workType</xpath>
+      <value><workType>DWS_PatientCare</workType></value>
+    </match>
+  </Operation>
+
+  <!-- 생명공학: 구급 메카노이드는 의사 칸만 허용돼 있어 새 칸을 추가하지 않으면 수술·급식을 잃는다 -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Mech_Paramedic"]/race/mechEnabledWorkTypes</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="Mech_Paramedic"]/race/mechEnabledWorkTypes</xpath>
+      <value>
+        <li>DWS_Surgery</li>
+        <li>DWS_PatientCare</li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

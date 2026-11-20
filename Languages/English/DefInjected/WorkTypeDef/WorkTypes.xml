@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DWS_Surgery.labelShort>surgery</DWS_Surgery.labelShort>
+  <DWS_Surgery.pawnLabel>Surgeon</DWS_Surgery.pawnLabel>
+  <DWS_Surgery.gerundLabel>performing surgery</DWS_Surgery.gerundLabel>
+  <DWS_Surgery.description>Perform assigned surgeries on colonists, prisoners and animals, and take patients to bed for operations.</DWS_Surgery.description>
+  <DWS_Surgery.verb>Operate on</DWS_Surgery.verb>
+  <DWS_PatientCare.labelShort>patient care</DWS_PatientCare.labelShort>
+  <DWS_PatientCare.pawnLabel>Nurse</DWS_PatientCare.pawnLabel>
+  <DWS_PatientCare.gerundLabel>nursing</DWS_PatientCare.gerundLabel>
+  <DWS_PatientCare.description>Feed patients and sick animals, give hemogen, and visit the sick to cheer them up.</DWS_PatientCare.description>
+  <DWS_PatientCare.verb>Care for</DWS_PatientCare.verb>
+</LanguageData>

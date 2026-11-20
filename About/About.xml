@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Doctor Work Split</name>
+  <author>9ranr11d</author>
+  <packageId>9ranr11d.doctorworksplit</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Splits the Doctor work type into three columns on the Work tab.
+
+- Doctor: emergency and routine treatment, self-tending, animal treatment, rescue
+- Surgery: operations on people and animals, taking patients to bed for operations
+- Patient care: feeding patients and animals, administering hemogen, visiting the sick
+
+Works with existing saves. Paramedic mechs keep all three kinds of work.</description>
+</ModMetaData>

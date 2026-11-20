@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DWS_Surgery.labelShort>수술</DWS_Surgery.labelShort>
+  <DWS_Surgery.pawnLabel>외과의</DWS_Surgery.pawnLabel>
+  <DWS_Surgery.gerundLabel>수술하는 중</DWS_Surgery.gerundLabel>
+  <DWS_Surgery.description>지정된 수술을 정착민·죄수·동물에게 시행하고, 수술이 필요한 환자를 침대로 옮깁니다.</DWS_Surgery.description>
+  <DWS_Surgery.verb>수술</DWS_Surgery.verb>
+  <DWS_PatientCare.labelShort>간호</DWS_PatientCare.labelShort>
+  <DWS_PatientCare.pawnLabel>간호사</DWS_PatientCare.pawnLabel>
+  <DWS_PatientCare.gerundLabel>간호하는 중</DWS_PatientCare.gerundLabel>
+  <DWS_PatientCare.description>환자와 아픈 동물에게 밥을 먹이고, 헤모젠을 투여하고, 아픈 사람을 문병해 기운을 북돋웁니다.</DWS_PatientCare.description>
+  <DWS_PatientCare.verb>간호</DWS_PatientCare.verb>
+</LanguageData>

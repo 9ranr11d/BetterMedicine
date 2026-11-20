@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 작업 탭은 naturalPriority 큰 쪽이 왼쪽. Doctor 1300 바로 아래에 간호 1299, 수술 1298. 같은 우선순위 숫자일 때 바닐라처럼 급식이 수술보다 먼저 오게 하려고 간호를 앞에 둔다. -->
+  <WorkTypeDef>
+    <defName>DWS_Surgery</defName>
+    <labelShort>surgery</labelShort>
+    <pawnLabel>Surgeon</pawnLabel>
+    <gerundLabel>performing surgery</gerundLabel>
+    <description>Perform assigned surgeries on colonists, prisoners and animals, and take patients to bed for operations.</description>
+    <verb>Operate on</verb>
+    <naturalPriority>1298</naturalPriority>
+    <relevantSkills>
+      <li>Medicine</li>
+    </relevantSkills>
+    <workTags>
+      <li>Caring</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+  <WorkTypeDef>
+    <defName>DWS_PatientCare</defName>
+    <labelShort>patient care</labelShort>
+    <pawnLabel>Nurse</pawnLabel>
+    <gerundLabel>nursing</gerundLabel>
+    <description>Feed patients and sick animals, give hemogen, and visit the sick to cheer them up.</description>
+    <verb>Care for</verb>
+    <naturalPriority>1299</naturalPriority>
+    <relevantSkills>
+      <li>Medicine</li>
+    </relevantSkills>
+    <workTags>
+      <li>Caring</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>
