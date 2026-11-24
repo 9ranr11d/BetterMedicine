@@ -6,7 +6,9 @@
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Small medical improvements. XML only, no DLL.
+  <description>Renamed from "Doctor Work Split". If the mod shows as disabled after the update, re-enable it in the mod list. A one-time "missing mod" warning when loading a save is harmless.
+
+Small medical improvements. XML only, no DLL.
 
 Doctor work split
 Splits the Doctor work type into three columns on the Work tab.
