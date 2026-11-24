@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 생체공학 코: 바닐라 생체공학 눈(BionicEye)과 같은 구조 — 제작대에서 아이템을 만들고 그 아이템으로 이식한다.
+       잘린 코에 인공 부위가 달리면 RelationsUtility.IsDisfigured 가 그 부위를 건너뛰어 외모 손상(호감 -15)이 사라진다.
+       코는 능력치에 쓰이지 않아 효율은 100%, 외모용이라 눈(플라스틸 15·고급 부품 4)보다 싸게 잡았다.
+       (~2026-11-23: 아이템 없이 강철 5로 바로 이식하는 "인공 코" BM_ProstheticNose 였다. 사용자 요청으로 교체) -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BM_BionicNose</defName>
+    <label>bionic nose</label>
+    <labelNoun>a bionic nose</labelNoun>
+    <description>An installed bionic nose. Its synthetic skin and lattice-dust healing system make it nearly indistinguishable from a natural nose.</description>
+    <descriptionHyperlinks><ThingDef>BM_BionicNose</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BM_BionicNose</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BM_BionicNose</defName>
+    <label>bionic nose</label>
+    <description>An advanced artificial nose. Its synthetic skin and lattice-dust healing system make it nearly indistinguishable from a natural nose. Installing it on a missing nose removes the disfigurement.</description>
+    <descriptionHyperlinks><RecipeDef>BM_InstallBionicNose</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>5</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>13000</WorkToMake>
+      <Mass>0.2</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>BM_InstallBionicNose</defName>
+    <label>install bionic nose</label>
+    <description>Install a bionic nose.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BM_BionicNose</ThingDef>
+      <HediffDef>BM_BionicNose</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic nose.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BM_BionicNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BM_BionicNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BM_BionicNose</addsHediff>
+  </RecipeDef>
+
+</Defs>

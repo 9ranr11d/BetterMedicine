@@ -15,10 +15,10 @@ Splits the Doctor work type into three columns on the Work tab.
 - Patient care: feeding patients and animals, administering hemogen, visiting the sick
 Paramedic mechs keep all three kinds of work. Existing colonists start with the two new columns off.
 
-Prosthetic nose
-Adds a surgery that installs a simple steel prosthetic nose on a missing nose. The pawn no longer counts as disfigured, so others stop giving the -15 opinion penalty.
+Bionic nose
+Adds a bionic nose, made at the fabrication bench (Bionics research) like other bionic parts and installed by surgery on a missing nose. The pawn no longer counts as disfigured, so others stop giving the -15 opinion penalty.
 
-Works with existing saves. If you remove the mod, installed prosthetic noses disappear.
+Works with existing saves. If you remove the mod, installed bionic noses disappear.
 
 Formerly "Doctor Work Split".</description>
 </ModMetaData>
