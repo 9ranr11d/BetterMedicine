@@ -16,6 +16,7 @@ Splits the Doctor work type into three columns on the Work tab.
 - Surgery: operations on people and animals, taking patients to bed for operations
 - Patient care: feeding patients and animals, administering hemogen, visiting the sick
 Paramedic mechs keep all three kinds of work. Existing colonists start with the two new columns off.
+If [FSF] Complex Jobs is active, this work split turns itself off (Complex Jobs already has Surgeon and Nurse).
 
 Bionic nose
 Adds a bionic nose, made at the fabrication bench (Bionics research) like other bionic parts and installed by surgery on a missing nose. The pawn no longer counts as disfigured, so others stop giving the -15 opinion penalty.

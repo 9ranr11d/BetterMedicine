@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <!-- 의사 작업 분리: [FSF] Complex Jobs 가 같은 일거리를 수술(FSFSurgeon)·간호(FSFNurse)로 이미 나누므로, 켜져 있으면 빼서 빈 칸이 안 생기게 한다 -->
+    <li IfModNotActive="FrozenSnowFox.ComplexJobs">1.6/WorkSplit</li>
+  </v1.6>
+</loadFolders>
